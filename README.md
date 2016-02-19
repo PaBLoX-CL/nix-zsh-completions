@@ -19,7 +19,9 @@ Antigen Installation
 Add the following to `~/.zshrc`
 
 ```zsh
-antigen bundle git@github.com:spwhitt/nix-zsh-completions.git
+antigen bundle spwhitt/nix-zsh-completions
+# depending on your configuration might be necessary to autoload compinit
+autoload -U compinit && compinit
 ```
 
 Plain ZSH Installation
